@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet"> 
+        
+      <title>To-do List</title>
+    </head>
+      <body>
+        <div class="contents">
+
+        <h1>To Do List</h1>
+        
+        
+
+        <div id="addTaskButton">
+
+          <form onsubmit="event.preventDefault();">
+            <label for="newTask">Add a Task</label><br>
+            <input type="text" id="newTask" name="newTask">
+            <br>
+            <div class="buttonsDiv" >
+          
+            <button class="button-2" onclick="addTask()">Add to List</button>
+            <button class="button-2" onclick="clearList();window.location.reload()">Clear List</button>
+            <button class="button-2" onclick="clearCompleted()">Clear completed</button>
+            <button class="button-2" onclick="saveItems()">Save</button>
+          </div>
+            
+
+          </form>
+          
+         </div>
+
+         <div id="tasksDiv" class="tasksDiv">
+          <!--
+            function to remove completed classes/tasks DONE
+            fucntion to save list to local storage DONE
+            stylng for list 
+
+            -->
+
+      
+          
+
+        <div id="tasks">
+             
+
+           </div>
+         </div>
+
+
+
+
+         <script src="javascript.js"></script> 
+</body>
+
+</html> 
