@@ -8,7 +8,7 @@
 
 
 body {
-    background-color: #A9A9A9;
+    background-color: #ffefef;
     font-family: 'Karla', sans-serif;
 }
 
@@ -28,10 +28,10 @@ body {
 }
 
 .button-2 {
-  background-color: rgba(51, 51, 51, 0.05);
+  background-color: rgb(82, 74, 74);
   border-radius: 8px;
   border-width: 0;
-  color: #333333;
+  color: #ffffff;
   cursor: pointer;
   display: inline-block;
   font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
