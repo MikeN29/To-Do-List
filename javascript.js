@@ -1,7 +1,3 @@
-
-
-
-
 let newTask = '';
 
 function addTask() {
@@ -22,7 +18,7 @@ function createTaskElement(newTask, completed) {
      const parentDiv = document.getElementById("tasksDiv");
      parentDiv.insertBefore(newLi, currentDiv);
 
-     newLi.classList.add("geek");
+     newLi.classList.add("task");
      
 
     if (completed) {
@@ -71,25 +67,14 @@ if (saved) {
 }
 
 
+let taskEle = document.getElementsByClassName('task') 
 
-
-let test = document.getElementsByClassName('geek') 
-
-// test.addEventListener("dblclick", toggleToDoItemState)
-
-
-for(let i = 0; i < test.length; i++) {
-  test[i].addEventListener("dblclick", toggleToDoItemState);
+for(let i = 0; i < taskEle.length; i++) {
+  taskEle[i].addEventListener("dblclick", toggleToDoItemState);
   };
-
-
-
 
 
 function clearList() {
     localStorage.clear();
 }
-
-//double click completed function does not work on locally stored data once page has been refreshed
-
 
