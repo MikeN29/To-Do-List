@@ -22,8 +22,10 @@ function createTaskElement(newTask, completed) {
      const parentDiv = document.getElementById("tasksDiv");
      parentDiv.insertBefore(newLi, currentDiv);
 
+     newLi.classList.add("geek");
+     
 
-     if (completed) {
+    if (completed) {
         newLi.classList.add("completed");
     }
     
@@ -31,9 +33,6 @@ function createTaskElement(newTask, completed) {
     newLi.addEventListener("dblclick", toggleToDoItemState);
     
     }
-
-    
-
 
 
     function toggleToDoItemState() {
@@ -58,11 +57,7 @@ function createTaskElement(newTask, completed) {
 
 
 function saveItems(completed){  
-    localStorage.setItem('savedTasks', tasksDiv.innerHTML);
-    //localStorage.setItem('savedTasks', JSON.stringify(tasksDiv.innerHTML));
-    
-    //console.log(savedTasks)
-    
+    localStorage.setItem('savedTasks', tasksDiv.innerHTML);   
 }
 
 
@@ -75,8 +70,20 @@ if (saved) {
     
 }
 
-//document.getElementById('tasksDiv').addEventListener("dblclick", toggleToDoItemState)
-//newLi.addEventListener("dblclick", toggleToDoItemState)
+
+
+
+let test = document.getElementsByClassName('geek') 
+
+// test.addEventListener("dblclick", toggleToDoItemState)
+
+
+for(let i = 0; i < test.length; i++) {
+  test[i].addEventListener("dblclick", toggleToDoItemState);
+  };
+
+
+
 
 
 function clearList() {
